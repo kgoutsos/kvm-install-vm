@@ -100,6 +100,7 @@ DISTRIBUTIONS
     fedora28        Fedora 28                           fedora
     fedora28-atomic Fedora 28 Atomic Host               fedora
     ubuntu1604      Ubuntu 16.04 LTS (Xenial Xerus)     ubuntu
+    ubuntu1804      Ubuntu 18.04 LTS (Bionic Beaver)     ubuntu
 
 EXAMPLES
     kvm-install-vm create foo
