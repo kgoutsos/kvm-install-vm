@@ -8,13 +8,7 @@ Tested on Fedora 27.
 
 ### Prerequisites
 
-You need to have the KVM hypervisor installed, along with a few other packages:
-
-- genisoimage or mkisofs
-- virt-install
-- libguestfs-tools-c
-- qemu-img
-- libvirt-client
+You need to have the KVM hypervisor installed, along with a few other packages.
 
 To install the dependencies, run:
 
@@ -22,10 +16,22 @@ To install the dependencies, run:
 sudo dnf -y install genisoimage virt-install libguestfs-tools-c qemu-img libvirt-client wget
 ```
 
+or
+
+```
+sudo apt install -y genisoimage wget virtinst qemu-utils libvirt-clients libguestfs-tools
+```
+
 If you want to resolve guests by their hostnames, install the `libvirt-nss` package:
 
 ```
 sudo dnf -y install libvirt-nss
+```
+
+or
+
+```
+sudo apt install -y libnss-libvirt
 ```
 
 Then, add `libvirt` and `libvirt_guest` to list of **hosts** databases in
